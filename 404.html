@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Page not found — Redirecting…</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // If we are on the GitHub Pages domain, redirect to the /home/ path.
+    // This helps SPA routing and unknown paths to resolve to your app entry.
+    (function() {
+      var target = "https://gen-fun-1.github.io/home/";
+      // If current location already looks like the home path, do nothing.
+      if (location.href === target || location.pathname.startsWith("/home/")) return;
+      // Replace current history entry so browser back behaves well.
+      location.replace(target);
+    })();
+  </script>
+  <style>body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:4rem;text-align:center;color:#333}</style>
+</head>
+<body>
+  <p>Page not found. Redirecting to <a href="https://gen-fun-1.github.io/home/">home</a>…</p>
+</body>
+</html>
